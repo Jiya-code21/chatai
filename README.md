@@ -2,6 +2,9 @@
 
 A modern AI chatbot built with React, Vite, Axios, and the Google Gemini API. The application allows users to ask questions and receive AI-generated responses through a simple, responsive interface.
 
+##Project Purpose
+This project was built as a learning exercise to understand the integration of the Google Gemini API with a React application. The primary goal was to explore API communication, handle AI-generated responses, manage environment variables securely, and build a simple conversational interface using modern frontend technologies.
+
 ## Features
 
 * AI-powered conversational interface
