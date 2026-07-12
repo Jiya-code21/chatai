@@ -1,16 +1,109 @@
-# React + Vite
+# ChatAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern AI chatbot built with React, Vite, Axios, and the Google Gemini API. The application allows users to ask questions and receive AI-generated responses through a simple, responsive interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* AI-powered conversational interface
+* Real-time response generation using the Google Gemini API
+* Responsive and clean user interface
+* Fast development with Vite
+* Secure environment variable configuration
+* Axios-based API integration
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript (ES6+)
+* Axios
+* Google Gemini API
+* CSS
 
-## Expanding the Oxlint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+chatai/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+├── .env.example
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/chatai.git
+```
+
+Move into the project directory:
+
+```bash
+cd chatai
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file in the project root and add your Gemini API endpoint:
+
+```env
+VITE_GEMINI_API_URL=YOUR_GEMINI_API_ENDPOINT
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+## Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+VITE_GEMINI_API_URL=YOUR_GEMINI_API_ENDPOINT
+```
+
+Do not commit your `.env` file to version control.
+
+## Future Enhancements
+
+* Chat history
+* Dark mode
+* Markdown support
+* Copy response functionality
+* Syntax highlighting for code responses
+* Streaming responses
+* Conversation management
+
+## Contributing
+
+Contributions are welcome. Feel free to fork the repository, create a new branch, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+Jiya Agrawal 
